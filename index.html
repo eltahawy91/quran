@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>قراءه القران الكريم</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="styles/bootstrap.min.css">
+
+</head>
+
+<body>
+
+    <body>
+        <div class="navigation">
+            <nav class="container-fluid">
+                <div class="row align-items-center justify-content-center flex-nowrap"
+                    style="gap: 30px; padding: 15px 40px;">
+                    <div id="clock" class="col-lg-9 col-md-8 col-sm-2"></div>
+
+                    <div class="compony-logo">
+                        تــــــــــــــــلاوه
+                    </div>
+
+
+                    <div class="">
+                        <div class="product_list_header d-flex align-items-center justify-content-between">
+                            <div class="last d-flex">
+                                <div class="mega-menu viewCart" id="mega-menu" style="float:right;">
+                                    <i class="fa-solid fa-bars"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </nav>
+            <div class="body-mega" id="body-mega">
+                <div class="content">
+                    <div class="cart-header">
+                        <span class="close-menu" id="close-menu"><i class="fa-solid fa-xmark"></i></span>
+                        <h2 class="header-title">Telawa.com</h2>
+                    </div>
+                    <ul class="lists">
+                        <h3>القائمه</h3>
+                        <li><a href="">الصفحه الرئيسيه
+                                <i class="fa-solid fa-house ml-2"></i>
+                            </a></li>
+                        <li><a href="#quran"> القرآن الكريم
+                                <i class="fa-solid fa-radio ml-2"></i>
+                            </a></li>
+                      
+                        <li class="accident"><a> احاديث
+                                <i class="fa-solid fa-circle-info ml-2"></i>
+                            </a> </li>
+                     
+
+                    </ul>
+
+
+
+
+
+
+                </div>
+
+
+            </div>
+        </div>
+
+        <section>
+            <div class="inside-page container">
+
+                <div class="search position-relative">
+                    <input type="text" class="inputsearch" placeholder="ماذا تريد ان تقرأ ؟" />
+                    <i class="fa-solid fa-magnifying-glass icon-search"></i>
+                </div>
+                <div class="new-info position-relative">
+                    <span class="top">جديد! اعرف اكثر</span>
+                    <h1 class="title">تقديم نمو الرحلة القرآنية</h1>
+                    <p class="one">هل تجد صعوبة في الحفاظ على التوافق مع أهدافك في قراءة القرآن؟</p>
+                    <br>
+                    <p>رحلة نمو القرآن هي ميزة ديناميكية تم تطويرها لمساعدتك على البقاء متسقًا في رحلتك مع القرآن. سواء
+                        كنت تهدف إلى قراءة 10 دقائق في اليوم ، أو إكمال جزء في شهر ، أو إنهاء القرآن بالكامل في عام ،
+                        وما إلى ذلك ، يمكن أن يساعدك تطبيق Telawa.com الآن في تحديد هدف مخصص وتتبع خطوط القراءة اليومية
+                        ،
+                        بينما تتكيف مع تقدمك. إنه مجاني تمامًا للاستخدام ونأمل أن يساعدك على البقاء متحمسًا للوصول إلى
+                        هدفك!
+                    </p>
+                    <a href class="create">انشاء هدف</a>
+                </div>
+
+
+            </div>
+        </section>
+        <!-- hadith -->
+
+        <section class="hadith">
+            <div class="container">
+                <h3>أحاديث</h3>
+                <div class="hadithContainer">
+
+                </div>
+                <div class="buttons">
+                    <div class="prev">السابق</div>
+                    <div class="number"><span class="length"></span><span></span></div>
+                    <div class="next">التالي</div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section class="sura" id="quran">
+            <div class="container">
+                <h3>القرآن الكريم</h3>
+                <audio src="" autoplay controls class="audio"></audio>
+
+                <div class="row flex-row-reverse" id="allSura">
+
+                </div>
+            </div>
+        </section>
+        <div class="suraPopUp">
+            <div class="close"><i class="fa-solid fa-xmark closeIcon"></i></div>
+            <div class="ayat">
+
+
+            </div>
+        </div>
+
+        <section class="pray">
+            <h3>اوقات الصلاه</h3>
+            <div class="container">
+                <div class="row card-pray">
+
+
+
+                </div>
+            </div>
+        </section>
+
+
+        <div class="footer-basic">
+            <footer>
+                <div class="social">
+                    <a href="https://github.com/eltahawy91" target="_blank"><i class="fa-brands fa-github-alt"></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=100080271421951&mibextid=ZbWKwL" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://api.whatsapp.com/send?phone=201204817927" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+                <p class="copyright">@ <span id="date"></span> All rights reserved to 3lTa7awy</p>
+            </footer>
+        </div>
+
+
+
+
+    </body>
+
+    <script src="js/main.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>

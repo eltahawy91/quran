@@ -1,0 +1,667 @@
+body {
+    overflow-x: hidden !important;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#clock {
+    color: white;
+    width: fit-content;
+    font-size: 23px;
+}
+
+
+@media (max-width:767px) {
+    .body-mega {
+        position: fixed !important;
+    }
+
+}
+
+.body-mega {
+    position: fixed;
+    top: 0;
+    right: -150%;
+    /* height: 100%; */
+    /* transform: translateX(150%); */
+    width: 400px;
+    height: 100%;
+    background-color: #343a40;
+    z-index: 1000;
+    /* margin-right: -100%; */
+    transition: 0.6s;
+    /* padding: 24px 24px 0px 24px; */
+    box-shadow: 0px 4px 8px #212529;
+    /* overflow-y: auto; */
+    /* overflow-y: scroll; */
+    overflow: hidden;
+}
+
+@media (max-width:617px) {
+    .body-mega {
+        width: 100%;
+        /* margin-top: 18px; */
+        /* z-index: 20000000; */
+    }
+
+}
+
+.mega-menu {
+    cursor: pointer;
+    padding: 10px;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mega-menu i {
+    color: white;
+    font-size: 28px;
+    min-width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+}
+
+.close-menu {
+    position: relative;
+    cursor: pointer;
+    /* margin-left: 22px; */
+    height: 40px;
+    width: 40px;
+    font-size: 18px;
+    border-radius: 50%;
+    background: none;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.6s;
+}
+
+.close-menu:hover {
+    background-color: #646464;
+    color: white;
+}
+
+.cart-header {
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+    border-bottom: 1px solid #646161;
+    padding-bottom: 18px;
+    /* flex-direction: row-reverse; */
+    padding: 10px 20px;
+    /* margin:  7px 12px 12px; */
+    background: #343a40;
+    /* color: white; */
+}
+
+nav {
+    background-color: #333;
+    width: 100%;
+}
+
+.compony-logo img {
+    width: 100px;
+}
+
+.header-title {
+    color: white;
+}
+
+.mega-menu i:hover {
+    background-color: #646464;
+    color: white;
+}
+
+li {
+    list-style-type: none;
+}
+
+a,
+a:hover {
+    text-decoration: none !important;
+}
+
+
+.body-mega .lists li:hover a i {
+    color: white;
+}
+
+.body-mega .lists li a i {
+
+    color: #5e5e5e;
+    font-size: 18px;
+    transition: 0.6;
+}
+
+.body-mega .lists h3 {
+
+    text-align: right;
+
+    margin: 18px 12px;
+
+    color: white;
+
+    font-size: 13px;
+
+    border-bottom: 1px solid #646161;
+
+    padding: 12px 0;
+}
+
+.body-mega .lists li {
+    text-align: right;
+    margin: 18px 12px;
+    color: #ffffff;
+    font-size: 13px;
+    border-bottom: 1px solid #646161;
+    padding: 12px 0;
+    cursor: pointer;
+}
+
+.body-mega .lists li a {
+    color: white;
+}
+
+.inputsearch {
+    position: relative;
+    box-sizing: border-box;
+    background: white;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0px 40px;
+    color: #333;
+    height: 60px;
+    border-radius: 30px;
+    cursor: pointer;
+    outline: inherit;
+    font-size: 18px;
+    inset-block-start: 0;
+    justify-content: space-between;
+    text-align: right;
+    margin: 30px 0;
+}
+
+body {
+    background-color: #1f2125;
+}
+
+.icon-search {
+
+    position: absolute;
+
+    right: 15px;
+
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    color: gray;
+}
+
+.new-info {
+    background-color: #272f33;
+    position: relative;
+    border-radius: 9px;
+    padding: 10px;
+    text-align: right;
+    /* margin: 20px 0; */
+}
+
+.inside-page .search {
+    position: relative;
+}
+
+.new-info .top {
+    background: #2ca4ab;
+    color: white;
+    padding: 0px 20px;
+    border-radius: 36px;
+    line-height: 41.6px;
+    position: absolute;
+    right: 15px;
+    top: -17px;
+}
+
+.new-info .title {
+    color: #2ca4ab;
+    font-size: 22px;
+    text-align: right;
+    margin: 30px 10px 0 0;
+}
+
+.new-info .one {
+    color: white;
+    margin: 15px 10px 0 0;
+}
+
+.new-info p {
+    color: white;
+    font-size: 13px;
+    margin: 0px 10px 0 0;
+}
+
+.new-info .create {
+    padding: 4px 12px;
+    margin: 20px 10px;
+    border-radius: 4px;
+    border: 0px;
+    cursor: pointer;
+    color: black;
+    background: white;
+    display: block;
+    width: fit-content;
+    /* float: right; */
+    /* margin-right: 0; */
+    /* margin-left: 0; */
+    transition: 0.6s;
+}
+
+.new-info .create:hover {
+    background: #2ca4ab;
+    color: white;
+    transform: scale(1.1);
+}
+
+.sura {
+
+    /* margin-top: 30px; */
+
+    text-align: right;
+}
+
+.sura .category {
+
+    color: white;
+
+    display: flex;
+
+    gap: 20px;
+
+    flex-direction: row-reverse;
+
+    justify-content: end;
+
+    border-bottom: 1px solid #bebebe;
+
+    /* padding: 0 0 10px 0; */
+}
+
+.sura .category .active {
+
+    border-bottom: 2px solid #bbbbbb;
+
+    padding: 0 0 10px 0;
+}
+
+.sura .category span {
+    cursor: pointer;
+}
+
+.alsoura {
+
+    width: 100%;
+
+    padding: 20px;
+
+    border: 2px solid;
+
+    margin: 20px 0;
+
+    display: flex;
+
+    flex-direction: row-reverse;
+
+    justify-content: space-between;
+
+    cursor: pointer;
+
+    transition: 0.6s;
+}
+
+.alsoura .name-num {
+
+    display: flex;
+
+    justify-content: end;
+
+    gap: 20px;
+
+    flex-direction: row-reverse;
+
+    cursor: pointer;
+}
+
+.alsoura .name-num .number {
+
+    transform: rotate(45deg);
+
+    background: #333;
+
+    width: 30px;
+
+    height: 30px;
+
+    text-align: center;
+
+    line-height: 30px;
+
+    color: white;
+
+    border-radius: 4px;
+    transition: 0.6s;
+}
+
+.alsoura .name-num .number span {
+    /* color: red; */
+    display: block;
+    transform: rotate(-45deg);
+}
+
+.alsoura .name-num .name {
+
+    color: white;
+
+    font-size: 18px;
+}
+
+.alsoura .numAya {
+
+    color: white;
+}
+
+.alsoura:hover .name-num .number {
+    background-color: #2ca4ab;
+    color: white;
+
+}
+
+.alsoura:hover {
+    border: 2px solid #2ca4ab;
+}
+
+/* hadith */
+section {
+    padding: 40px 0 0 0;
+}
+
+section h3 {
+    font-size: 30px;
+    text-align: center;
+    color: white;
+    margin-bottom: 50px;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+section h3::after,
+section h3::before {
+    content: "";
+    position: absolute;
+    background-color: #bebebe;
+    height: 2px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+section h3::after {
+    width: 50px;
+    bottom: -10px;
+}
+
+section h3::before {
+    width: 100px;
+    bottom: 0px;
+}
+
+.hadith .buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.hadith .buttons div {
+
+    color: #bebebe;
+
+    padding: 10px 20px;
+
+    cursor: pointer;
+
+    border: 2px solid #bebebe;
+
+    border-radius: 8px;
+
+    /* pointer-events: none; */
+}
+
+.hadith .hadithContainer {
+    /* max-height: 500px; */
+    position: relative;
+    box-shadow: 4px 4px 4px 0 #d1d9e630 inset, -4px -4px 4px 0 #d1d9e62e inset;
+    color: #bebebe;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 20px;
+}
+
+.hadith .hadithContainer .number {
+    position: absolute;
+    /* left: 0; */
+    bottom: -70px;
+    padding: 10px 20px;
+    color: #a0a0a0;
+    background: #1f2125;
+    font-weight: 600;
+    font-size: 20px;
+    border-radius: 8px;
+    border: 2px solid;
+}
+
+/* popup ayat */
+.suraPopUp {
+    position: fixed;
+    top: 80px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #1f2125;
+    z-index: 2;
+    overflow-y: scroll;
+    transform: translateX(100%);
+    transition: 0.6s;
+    height: 100%;
+}
+
+.suraPopUp::-webkit-scrollbar {
+    width: 15px;
+    background-color: #a0a0a0;
+}
+
+.suraPopUp::-webkit-scrollbar-thumb {
+    background-color: #343a40;
+}
+
+.suraPopUp .close {
+    position: sticky;
+    top: 5px;
+    right: 5px;
+    width: 40px;
+    height: 40px;
+    box-shadow: 0 0 4px rgb(0 0 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #1f2125;
+    cursor: pointer;
+    z-index: 100000;
+}
+
+.suraPopUp .close .closeIcon {
+    color: white;
+}
+
+.suraPopUp .ayat {
+    position: relative;
+    padding: 45px;
+    margin-top: 20px;
+}
+
+.suraPopUp .ayat p {
+    color: #bbbbbb;
+    text-align: center;
+    border-bottom: 2px solid;
+    line-height: 2;
+    width: 100%;
+    direction: rtl;
+}
+
+.audio {
+    width: 100%;
+    display: block;
+    position: sticky;
+    top: 80px;
+    z-index: 1;
+}
+
+.compony-logo {
+    color: white;
+    font-size: 33px;
+    font-family: cursive;
+}
+
+.navigation {
+    position: sticky;
+    top: 0px;
+    z-index: 100;
+}
+
+
+
+.pray .cards {
+    color: white;
+    box-shadow: inset 0 0 0.5px 1px hsla(0, 0%, 100%, 0.075),
+        /* shadow ring 👇 */
+        0 0 0 1px hsla(0, 0%, 0%, 0.05),
+        /* multiple soft shadows 👇 */
+        0 0.3px 0.4px hsla(0, 0%, 0%, 0.02), 0 0.9px 1.5px hsla(0, 0%, 0%, 0.045), 0 3.5px 6px hsla(0, 0%, 0%, 0.09);
+    padding: 20px 0px;
+    margin: 20px auto;
+    text-align: center;
+    /* min-height: 320px; */
+    position: relative;
+    /* justify-content: center; */
+    /* border: 1px; */
+}
+
+.pray .cards .namePray {
+    color: #7f7f7f;
+    font-size: 25px;
+    text-transform: capitalize;
+}
+
+.pray .cards .time {
+    font-size: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.pray .cards .time small {
+
+    font-size: 16px;
+}
+
+.footer-basic {
+    padding: 40px 0;
+    background-color: #ffffff;
+    color: #4b4c4d;
+}
+
+.footer-basic ul {
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 0;
+}
+
+.footer-basic li {
+    padding: 0 10px;
+}
+
+.footer-basic ul a {
+    color: inherit;
+    text-decoration: none;
+    opacity: 0.8;
+}
+
+.footer-basic ul a:hover {
+    opacity: 1;
+}
+
+.footer-basic .social {
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+.footer-basic .social>a {
+    font-size: 24px;
+    width: 40px;
+    height: 40px;
+    /* line-height: 40px; */
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    margin: 0 8px;
+    color: #afafaf;
+    /* opacity: 0.75; */
+}
+
+.footer-basic .social>a:hover {
+    opacity: 0.9;
+}
+
+.footer-basic .copyright {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 13px;
+    color: #d0d0d0;
+    margin-bottom: 0;
+}
+
+.footer-basic {
+    background: url(../images/footer-3.jpg);
+    background-size: cover;
+    position: relative;
+    z-index: 22222222222;
+}
+.footer-basic::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: #1f2125;
+    z-index: 3000;
+    opacity: 0.8;
+    filter: blur(10px);
+    z-index: -2;
+}
